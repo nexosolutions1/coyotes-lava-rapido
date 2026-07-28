@@ -18,45 +18,6 @@ import { WhatsFloat } from "@/components/site/WhatsFloat";
 
 export const Route = createFileRoute("/")({
   component: Index,
-
-  head: () => ({
-    meta: [
-      {
-        title:
-          "Coyotes Lava Rápido — Estética Automotiva Premium em Extrema/MG",
-      },
-      {
-        name: "description",
-        content:
-          "Detalhamento, polimento e vitrificação de alto padrão em Extrema/MG. 4,9★ no Google com mais de 70 avaliações reais. Agende pelo WhatsApp.",
-      },
-      {
-        property: "og:title",
-        content:
-          "Coyotes Lava Rápido — Estética Automotiva Premium",
-      },
-      {
-        property: "og:description",
-        content:
-          "Padrão premium em detalhamento automotivo. Av. Brasil, 225 · Extrema/MG.",
-      },
-      {
-        property: "og:type",
-        content: "website",
-      },
-      {
-        property: "og:url",
-        content: "/",
-      },
-    ],
-
-    links: [
-      {
-        rel: "canonical",
-        href: "/",
-      },
-    ],
-  }),
 });
 
 function Index() {

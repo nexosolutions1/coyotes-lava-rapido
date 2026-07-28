@@ -110,6 +110,7 @@ export const Route = createRootRouteWithContext<{
         name: "theme-color",
         content: "#050505",
       },
+
       {
         property: "og:type",
         content: "website",
@@ -126,12 +127,40 @@ export const Route = createRootRouteWithContext<{
       {
         property: "og:description",
         content:
-          "Detalhamento, polimento e vitrificação de alto padrão em Extrema/MG. Agende pelo WhatsApp.",
+          "Lavagem, polimento, vitrificação e detalhamento automotivo em Extrema/MG.",
+      },
+      {
+        property: "og:url",
+        content: "https://coyotes-lavarapido.netlify.app/",
       },
       {
         property: "og:image",
-        content: "/og-coyotes.png",
+        content:
+          "https://coyotes-lavarapido.netlify.app/og-coyotes.png",
       },
+      {
+        property: "og:image:secure_url",
+        content:
+          "https://coyotes-lavarapido.netlify.app/og-coyotes.png",
+      },
+      {
+        property: "og:image:type",
+        content: "image/png",
+      },
+      {
+        property: "og:image:width",
+        content: "1200",
+      },
+      {
+        property: "og:image:height",
+        content: "630",
+      },
+      {
+        property: "og:image:alt",
+        content:
+          "Coyotes Lava Rápido e Estética Automotiva em Extrema/MG",
+      },
+
       {
         name: "twitter:card",
         content: "summary_large_image",
@@ -144,13 +173,20 @@ export const Route = createRootRouteWithContext<{
       {
         name: "twitter:description",
         content:
-          "Detalhamento, polimento e vitrificação de alto padrão em Extrema/MG. Agende pelo WhatsApp.",
+          "Lavagem, polimento, vitrificação e detalhamento automotivo em Extrema/MG.",
       },
       {
         name: "twitter:image",
-        content: "/og-coyotes.png",
+        content:
+          "https://coyotes-lavarapido.netlify.app/og-coyotes.png",
+      },
+      {
+        name: "twitter:image:alt",
+        content:
+          "Coyotes Lava Rápido e Estética Automotiva em Extrema/MG",
       },
     ],
+
     links: [
       {
         rel: "preconnect",
@@ -170,14 +206,23 @@ export const Route = createRootRouteWithContext<{
         href: appCss,
       },
       {
-  rel: "shortcut icon",
-  href: "/faviconcoyotes.png",
-  type: "image/png",
-},
-{
-  rel: "apple-touch-icon",
-  href: "/faviconcoyotes.png",
-},
+        rel: "icon",
+        href: "/faviconcoyotes.png",
+        type: "image/png",
+      },
+      {
+        rel: "shortcut icon",
+        href: "/faviconcoyotes.png",
+        type: "image/png",
+      },
+      {
+        rel: "apple-touch-icon",
+        href: "/faviconcoyotes.png",
+      },
+      {
+        rel: "canonical",
+        href: "https://coyotes-lavarapido.netlify.app/",
+      },
     ],
   }),
 

@@ -1,7 +1,7 @@
 import { n as require_jsx_runtime, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-UU5-Dte9.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-C1U8BQ9w.js
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-Ci_Wq9gS.css";
 function NotFoundComponent() {
@@ -102,11 +102,35 @@ var Route$1 = createRootRouteWithContext()({
 			},
 			{
 				property: "og:description",
-				content: "Detalhamento, polimento e vitrificação de alto padrão em Extrema/MG. Agende pelo WhatsApp."
+				content: "Lavagem, polimento, vitrificação e detalhamento automotivo em Extrema/MG."
+			},
+			{
+				property: "og:url",
+				content: "https://coyotes-lavarapido.netlify.app/"
 			},
 			{
 				property: "og:image",
-				content: "/og-coyotes.png"
+				content: "https://coyotes-lavarapido.netlify.app/og-coyotes.png"
+			},
+			{
+				property: "og:image:secure_url",
+				content: "https://coyotes-lavarapido.netlify.app/og-coyotes.png"
+			},
+			{
+				property: "og:image:type",
+				content: "image/png"
+			},
+			{
+				property: "og:image:width",
+				content: "1200"
+			},
+			{
+				property: "og:image:height",
+				content: "630"
+			},
+			{
+				property: "og:image:alt",
+				content: "Coyotes Lava Rápido e Estética Automotiva em Extrema/MG"
 			},
 			{
 				name: "twitter:card",
@@ -118,11 +142,15 @@ var Route$1 = createRootRouteWithContext()({
 			},
 			{
 				name: "twitter:description",
-				content: "Detalhamento, polimento e vitrificação de alto padrão em Extrema/MG. Agende pelo WhatsApp."
+				content: "Lavagem, polimento, vitrificação e detalhamento automotivo em Extrema/MG."
 			},
 			{
 				name: "twitter:image",
-				content: "/og-coyotes.png"
+				content: "https://coyotes-lavarapido.netlify.app/og-coyotes.png"
+			},
+			{
+				name: "twitter:image:alt",
+				content: "Coyotes Lava Rápido e Estética Automotiva em Extrema/MG"
 			}
 		],
 		links: [
@@ -144,6 +172,11 @@ var Route$1 = createRootRouteWithContext()({
 				href: styles_default
 			},
 			{
+				rel: "icon",
+				href: "/faviconcoyotes.png",
+				type: "image/png"
+			},
+			{
 				rel: "shortcut icon",
 				href: "/faviconcoyotes.png",
 				type: "image/png"
@@ -151,6 +184,10 @@ var Route$1 = createRootRouteWithContext()({
 			{
 				rel: "apple-touch-icon",
 				href: "/faviconcoyotes.png"
+			},
+			{
+				rel: "canonical",
+				href: "https://coyotes-lavarapido.netlify.app/"
 			}
 		]
 	}),
@@ -173,38 +210,7 @@ function RootComponent() {
 	});
 }
 var $$splitComponentImporter = () => import("./routes-BTKdvLQb.mjs");
-var rootRouteChildren = { IndexRoute: createFileRoute("/")({
-	component: lazyRouteComponent($$splitComponentImporter, "component"),
-	head: () => ({
-		meta: [
-			{ title: "Coyotes Lava Rápido — Estética Automotiva Premium em Extrema/MG" },
-			{
-				name: "description",
-				content: "Detalhamento, polimento e vitrificação de alto padrão em Extrema/MG. 4,9★ no Google com mais de 70 avaliações reais. Agende pelo WhatsApp."
-			},
-			{
-				property: "og:title",
-				content: "Coyotes Lava Rápido — Estética Automotiva Premium"
-			},
-			{
-				property: "og:description",
-				content: "Padrão premium em detalhamento automotivo. Av. Brasil, 225 · Extrema/MG."
-			},
-			{
-				property: "og:type",
-				content: "website"
-			},
-			{
-				property: "og:url",
-				content: "/"
-			}
-		],
-		links: [{
-			rel: "canonical",
-			href: "/"
-		}]
-	})
-}).update({
+var rootRouteChildren = { IndexRoute: createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter, "component") }).update({
 	id: "/",
 	path: "/",
 	getParentRoute: () => Route$1
